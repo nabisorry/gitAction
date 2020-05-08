@@ -1,0 +1,21 @@
+name: github checkout
+
+on:
+  [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+   # 다른 사람이 만든 액션을 사용 하고 싶을때 uses 사용한다.
+   # checkout@v2 액션은 runner 환경에서 우리 프로젝트를 클론하고 checkout 해주는 작업이다.
+    - uses: actions/checkout@v2
+      
+    - name: Run a one-line script
+      run: echo Hello, world!
+      
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
