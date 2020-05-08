@@ -1,0 +1,17 @@
+name: git-hub context
+
+on:
+  [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # Action이 실행되는 환경에서 여러 환경요소(githubId, repository_owner 등등)들을 찾고 싶을때 사용하는 예제
+      # 공식문서 https://help.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions
+    steps:
+      - name: "context"
+        # env 는 환경 변수를 사용할때 사용하는 키워드
+        env : 
+          COMMIT_ID: ${{github.sha}}
+        run: echo "Commit id => $COMMIT_ID"
+    
