@@ -1,0 +1,19 @@
+{
+  "name": "git_action",
+  "version": "1.0.0",
+  "description": "깃허브 액션 테스트",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nabisorry/gitAction.git"
+  },
+  "author": "nabisorry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nabisorry/gitAction/issues"
+  },
+  "homepage": "https://github.com/nabisorry/gitAction#readme"
+}
